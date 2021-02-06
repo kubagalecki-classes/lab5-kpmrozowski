@@ -9,7 +9,7 @@ std::vector< char > foo(std::list< Human >& people)
 {
 	std::vector<char> vc;
 	
-	for(auto h : people) {
+	for(auto& h : people) {
 		h.birthday();
 		if(h.isMonster()) {
 			vc.push_back('n');
