@@ -9,9 +9,9 @@ std::vector< char > foo(std::list< Human >& people)
 {
 	std::vector<char> vc;
 	
-	for(Human& h : people) {
-		h.birthday();
-		vc.push_back(h.isMonster() ? 'n' : 'y');
+	for(auto it = people.begin(); it != people.end(); it++) {
+		it->birthday();
+		vc.push_back(it->isMonster() ? 'n' : 'y');
 	}
   return vc;
 }
