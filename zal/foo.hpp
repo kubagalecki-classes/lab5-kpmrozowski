@@ -9,7 +9,7 @@
 std::vector< char > foo(std::list< Human >& people)
 {
 	std::vector<char> vc;
-	std::list<Human>::reverse_iteraor rit;
+	std::list<Human>::reverse_iterator rit;
 	
 	for(rit = people.rbegin(); rit != people.rend(); rit++) {
 		rit->birthday();
