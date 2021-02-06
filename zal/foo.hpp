@@ -4,14 +4,16 @@
 
 #include <list>
 #include <vector>
+#include <iterator>
 
 std::vector< char > foo(std::list< Human >& people)
 {
 	std::vector<char> vc;
+	std::list<Human>::reverse_iteraor rit;
 	
-	for(auto it = people.begin(); it != people.end(); it++) {
-		it->birthday();
-		vc.push_back(it->isMonster() ? 'n' : 'y');
+	for(rit = people.rbegin(); rit != people.rend(); rit++) {
+		rit->birthday();
+		vc.push_back(rit->isMonster() ? 'n' : 'y');
 	}
   return vc;
 }
