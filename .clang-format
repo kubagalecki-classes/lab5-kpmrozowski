@@ -1,5 +1,5 @@
 ---
-AccessModifierOffset: -4
+AccessModifierOffset: 0
 AlignAfterOpenBracket: Align
 AlignConsecutiveAssignments: true
 AlignConsecutiveDeclarations: true
@@ -33,8 +33,19 @@ Cpp11BracedListStyle: true
 DerivePointerAlignment: false
 FixNamespaceComments: true
 IncludeBlocks: Preserve
-IndentWidth: 4
+IndentWidth: 3
+MaxEmptyLinesToKeep: 10
 NamespaceIndentation: None
 PointerAlignment: Left
+SortIncludes: false
+SortUsingDeclarations: false
+SpaceAfterCStyleCast: false
+SpaceBeforeAssignmentOperators: true
 SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: false
+SpacesInCStyleCastParentheses: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
 SpacesInAngles: true
+TabWidth: 3
+UseTab: true
